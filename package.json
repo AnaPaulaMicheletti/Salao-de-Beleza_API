@@ -1,0 +1,52 @@
+{
+  "name": "salao-api",
+  "version": "1.0.0",
+  "description": "API REST para gerenciamento de salão de beleza",
+  "keywords": [
+    "api",
+    "salao-d-beleza",
+    "categoria",
+    "agendamento",
+    "profissional",
+    "servico"
+  ],
+  "homepage": "https://github.com/AnaPaulaMicheletti/Salao-de-Beleza_API.git#readme",
+  "bugs": {
+    "url": "https://github.com/AnaPaulaMicheletti/Salao-de-Beleza_API.git/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whtevy/Sal-o-de-Beleza---API.git"
+  },
+  "license": "(ISC)",
+  "author": "Ana Paula Micheletti e Evelyn Louise da Silva de Souza",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "dev": "node --watch --env-file=.env --import=tsx/esm src/server.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node --env-file=.env dist/server.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^5.1.1"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.0",
+    "@types/express": "^5.0.6",
+    "@types/supertest": "^7.2.1",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.8",
+    "@vitest/coverage-v8": "^5.1.1",
+    "@vitest/ui": "^5.1.1",
+    "express": "^5.2.1",
+    "supertest": "^7.3.2",
+    "swagger-jsdoc": "^6.3.0",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
